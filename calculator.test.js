@@ -35,3 +35,31 @@ test("Negativ durch negative Zahl ist größer als 0", () => {
 
   expect(result).toBeGreaterThan(0);
 });
+
+// -- Aufgabe 1 --
+// subtract
+test("subtract positive numbers", () => {
+  expect(calculator.subtract(5, 3)).toBe(2);
+});
+
+test("subtract negative numbers", () => {
+  expect(calculator.subtract(-5, -3)).toBe(-2);
+});
+
+test("subtract from zero", () => {
+  expect(calculator.subtract(0, 5)).toBe(-5);
+});
+
+// multiply
+test("multiply positive numbers", () => {
+  expect(calculator.multiply(5, 3)).toBe(15);
+});
+
+test("multiply with negative numbers", () => {
+  expect(calculator.multiply(-5, 3)).toBe(-15);
+});
+
+test("multiply by zero", () => {
+  expect(calculator.multiply(5, 0)).toBe(0);
+});
+// -- Aufgabe 1 Ende --
